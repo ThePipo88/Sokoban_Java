@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="Sokoban.jnlp">
+  <information>
+    <title>Sokoban</title>
+    <vendor>Pipo</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="Sokoban.jar" size="3889170" download="eager" />
+    <jar href="lib\controlsfx.jar" size="1213306" download="eager" />
+    <jar href="lib\javax.persistence-2.1.0.jar" size="162126" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2708772" download="eager" />
+    <jar href="lib\ojdbc8.jar" size="4161744" download="eager" />
+    <jar href="lib\org.eclipse.persistence.antlr-2.5.2.jar" size="189645" download="eager" />
+    <jar href="lib\org.eclipse.persistence.asm-2.5.2.jar" size="271204" download="eager" />
+    <jar href="lib\org.eclipse.persistence.core-2.5.2.jar" size="5056217" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa-2.5.2.jar" size="1364245" download="eager" />
+    <jar href="lib\org.eclipse.persistence.jpa.jpql-2.5.2.jar" size="1366247" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="sokoban.main"  name="Sokoban" />
+  <update check="always"/>
+</jnlp>

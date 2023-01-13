@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" styleClass="Inicio" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.controller.SeleccionViewController">
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="163.0" layoutY="99.0" prefHeight="502.0" prefWidth="874.0" styleClass="opacity2">
+         <children>
+            <VBox fx:id="VBNuevaPartida" alignment="CENTER" prefHeight="549.0" prefWidth="862.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="51.0" prefWidth="706.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE EL NIVEL A JUGAR">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets bottom="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="89.0" prefWidth="706.0" spacing="10.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="129.0" fitWidth="153.0">
+                                 <image>
+                                    <Image url="@../resources/map1.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXCheckBox fx:id="chkNivel1" onAction="#onActionNivel1" text="NIVEL 1" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="303.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="129.0" fitWidth="153.0">
+                                 <image>
+                                    <Image url="@../resources/map2.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXCheckBox fx:id="chkNivel2" onAction="#onActionNivel2" text="NIVEL 2" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="358.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="129.0" fitWidth="153.0">
+                                 <image>
+                                    <Image url="@../resources/map3.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXCheckBox fx:id="chkNivel3" onAction="#onActionNivel3" text="NIVEL 3" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="413.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="129.0" fitWidth="153.0">
+                                 <image>
+                                    <Image url="@../resources/Map4.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXCheckBox fx:id="chkNivel4" onAction="#onActionNivel4" text="NIVEL 4" />
+                           </children>
+                        </VBox>
+                        <VBox alignment="CENTER" layoutX="468.0" layoutY="10.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                           <children>
+                              <ImageView fitHeight="129.0" fitWidth="153.0">
+                                 <image>
+                                    <Image url="@../resources/Map5.png" />
+                                 </image>
+                              </ImageView>
+                              <JFXCheckBox fx:id="chkNivel5" onAction="#onActionNivel5" text="NIVEL 5" />
+                           </children>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="51.0" prefWidth="706.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="SELECCIONE LA DIFICULTAD">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <JFXComboBox fx:id="cbDificultad" focusColor="BLACK" onAction="#onActionDificultad" prefHeight="22.0" prefWidth="207.0" promptText="NIVEL DE DIFICULTAD">
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" />
+                     </VBox.margin>
+                  </JFXComboBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="86.0" prefHeight="207.0" prefWidth="862.0" spacing="10.0">
+                     <children>
+                        <TableView fx:id="tableDificultad" prefHeight="120.0" prefWidth="304.0">
+                          <columns>
+                            <TableColumn fx:id="columnNivel" prefWidth="75.0" text="Nivel " />
+                              <TableColumn fx:id="columnFacil" prefWidth="75.0" text="Facil" />
+                              <TableColumn fx:id="columnMedio" prefWidth="75.0" text="Medio" />
+                              <TableColumn fx:id="columnDificil" prefWidth="75.0" text="Dificil" />
+                          </columns>
+                        </TableView>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="NOMBRE DEL JUGADOR">
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <JFXTextField fx:id="txtNombreJugador" alignment="CENTER">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="300.0" right="300.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+                     <children>
+                        <JFXButton fx:id="btnRegresarN" layoutX="10.0" layoutY="10.0" onAction="#onActionRegresarN" styleClass="boton-personalizado-4" text="REGRESAR" />
+                        <JFXButton fx:id="btnComenzarN" onAction="#onActionComenzarN" styleClass="boton-personalizado-4" text="COMENZAR" />
+                        <JFXButton disable="true" layoutX="151.0" layoutY="10.0" styleClass="boton-personalizado-5" text="COMENZAR" visible="false" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox fx:id="VBCargarPartida" alignment="CENTER" layoutX="19.0" layoutY="44.0" prefHeight="504.0" prefWidth="875.0" spacing="60.0" visible="false">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="PARTIDAS GUARDADAS">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <TableView fx:id="gridListaJugadores" prefHeight="229.0" prefWidth="475.0">
+                    <columns>
+                      <TableColumn fx:id="txtColumnaNombre" prefWidth="155.0" style="-color-: red;" text="Nombre" />
+                      <TableColumn fx:id="txtColumnaNivel" prefWidth="156.0" text="Nivel" />
+                        <TableColumn fx:id="txtColumnaDificultad" prefWidth="162.0" text="Dificultad" />
+                    </columns>
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <JFXTextField fx:id="txtCargarPartida" alignment="CENTER" labelFloat="true" prefHeight="25.0" prefWidth="774.0" promptText="Ingrese el nombre de la partida a cargar">
+                     <VBox.margin>
+                        <Insets left="200.0" right="200.0" />
+                     </VBox.margin>
+                  </JFXTextField>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="200.0">
+                     <children>
+                        <JFXButton fx:id="btnRegresar" onAction="#onActionRegresar" styleClass="boton-personalizado-4" text="REGRESAR" />
+                        <JFXButton fx:id="btnCargarPartida" onAction="#onActionCargarPartida" styleClass="boton-personalizado-4" text="COMENZAR" />
+                        <JFXButton disable="true" layoutX="466.0" layoutY="10.0" styleClass="boton-personalizado-5" text="COMENZAR" visible="false" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

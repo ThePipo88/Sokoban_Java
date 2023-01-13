@@ -1,0 +1,45 @@
+<html><head>
+  <SCRIPT src="http://java.com/js/dtjava.js"></SCRIPT>
+<script>
+    function launchApplication(jnlpfile) {
+        dtjava.launch(            {
+                url : 'Sokoban.jnlp',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU29rb2Jhbi5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5Tb2tvYmFuPC90aXRsZT4NCiAgICA8dmVuZG9yPlBpcG88L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iU29rb2Jhbi5qYXIiIHNpemU9IjM4ODkxNzAiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxjb250cm9sc2Z4LmphciIgc2l6ZT0iMTIxMzMwNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphdmF4LnBlcnNpc3RlbmNlLTIuMS4wLmphciIgc2l6ZT0iMTYyMTI2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamZvZW5peC5qYXIiIHNpemU9IjI3MDg3NzIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvamRiYzguamFyIiBzaXplPSI0MTYxNzQ0IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcb3JnLmVjbGlwc2UucGVyc2lzdGVuY2UuYW50bHItMi41LjIuamFyIiBzaXplPSIxODk2NDUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuZWNsaXBzZS5wZXJzaXN0ZW5jZS5hc20tMi41LjIuamFyIiBzaXplPSIyNzEyMDQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuZWNsaXBzZS5wZXJzaXN0ZW5jZS5jb3JlLTIuNS4yLmphciIgc2l6ZT0iNTA1NjIxNyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy5lY2xpcHNlLnBlcnNpc3RlbmNlLmpwYS0yLjUuMi5qYXIiIHNpemU9IjEzNjQyNDUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuZWNsaXBzZS5wZXJzaXN0ZW5jZS5qcGEuanBxbC0yLjUuMi5qYXIiIHNpemU9IjEzNjYyNDciIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJzb2tvYmFuLm1haW4iICBuYW1lPSJTb2tvYmFuIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+        return false;
+    }
+</script>
+
+<script>
+    function javafxEmbedsokoban() {
+        dtjava.embed(
+            {
+                id : 'sokoban',
+                url : 'Sokoban.jnlp',
+                placeholder : 'javafx-app-placeholder',
+                width : '800',
+                height : '600',
+                jnlp_content : 'PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxqbmxwIHNwZWM9IjEuMCIgeG1sbnM6amZ4PSJodHRwOi8vamF2YWZ4LmNvbSIgaHJlZj0iU29rb2Jhbi5qbmxwIj4NCiAgPGluZm9ybWF0aW9uPg0KICAgIDx0aXRsZT5Tb2tvYmFuPC90aXRsZT4NCiAgICA8dmVuZG9yPlBpcG88L3ZlbmRvcj4NCiAgICA8ZGVzY3JpcHRpb24+bnVsbDwvZGVzY3JpcHRpb24+DQogICAgPG9mZmxpbmUtYWxsb3dlZC8+DQogIDwvaW5mb3JtYXRpb24+DQogIDxyZXNvdXJjZXM+DQogICAgPGoyc2UgdmVyc2lvbj0iMS42KyIgaHJlZj0iaHR0cDovL2phdmEuc3VuLmNvbS9wcm9kdWN0cy9hdXRvZGwvajJzZSIvPg0KICAgIDxqYXIgaHJlZj0iU29rb2Jhbi5qYXIiIHNpemU9IjM4ODkxNzAiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxjb250cm9sc2Z4LmphciIgc2l6ZT0iMTIxMzMwNiIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXGphdmF4LnBlcnNpc3RlbmNlLTIuMS4wLmphciIgc2l6ZT0iMTYyMTI2IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcamZvZW5peC5qYXIiIHNpemU9IjI3MDg3NzIiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvamRiYzguamFyIiBzaXplPSI0MTYxNzQ0IiBkb3dubG9hZD0iZWFnZXIiIC8+DQogICAgPGphciBocmVmPSJsaWJcb3JnLmVjbGlwc2UucGVyc2lzdGVuY2UuYW50bHItMi41LjIuamFyIiBzaXplPSIxODk2NDUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuZWNsaXBzZS5wZXJzaXN0ZW5jZS5hc20tMi41LjIuamFyIiBzaXplPSIyNzEyMDQiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuZWNsaXBzZS5wZXJzaXN0ZW5jZS5jb3JlLTIuNS4yLmphciIgc2l6ZT0iNTA1NjIxNyIgZG93bmxvYWQ9ImVhZ2VyIiAvPg0KICAgIDxqYXIgaHJlZj0ibGliXG9yZy5lY2xpcHNlLnBlcnNpc3RlbmNlLmpwYS0yLjUuMi5qYXIiIHNpemU9IjEzNjQyNDUiIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgICA8amFyIGhyZWY9ImxpYlxvcmcuZWNsaXBzZS5wZXJzaXN0ZW5jZS5qcGEuanBxbC0yLjUuMi5qYXIiIHNpemU9IjEzNjYyNDciIGRvd25sb2FkPSJlYWdlciIgLz4NCiAgPC9yZXNvdXJjZXM+DQogIDxqZng6amF2YWZ4LWRlc2MgIHdpZHRoPSI4MDAiIGhlaWdodD0iNjAwIiBtYWluLWNsYXNzPSJzb2tvYmFuLm1haW4iICBuYW1lPSJTb2tvYmFuIiAvPg0KICA8dXBkYXRlIGNoZWNrPSJhbHdheXMiLz4NCjwvam5scD4NCg=='
+            },
+            {
+                javafx : '8.0+'
+            },
+            {}
+        );
+    }
+    <!-- Embed FX application into web page once page is loaded -->
+    dtjava.addOnloadCallback(javafxEmbedsokoban);
+</script>
+
+</head><body>
+<h2>Test page for <b>Sokoban</b></h2>
+  <b>Webstart:</b> <a href='Sokoban.jnlp' onclick="return launchApplication('Sokoban.jnlp');">click to launch this app as webstart</a><br><hr><br>
+
+  <!-- Applet will be inserted here -->
+  <div id='javafx-app-placeholder'></div>
+</body></html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="bpInicio" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" styleClass="Inicio" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.controller.InicioViewController">
+   <center>
+      <VBox fx:id="vbCenter" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vbLado" alignment="CENTER" prefHeight="696.0" prefWidth="125.0" spacing="10.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0" style="-fx-background-color: Black;">
+                     <children>
+                        <JFXButton fx:id="btnJugar" onAction="#onActionJugar" prefHeight="25.0" prefWidth="132.0" styleClass="boton-personalizado-5" text="JUGAR">
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <JFXButton fx:id="btnCargarPartida" onAction="#onActionCargarPartida" prefHeight="50.0" prefWidth="196.0" styleClass="boton-personalizado-5" text="CARGAR PARTIDA" />
+                        <JFXButton fx:id="btnLogros" onAction="#onActionLogros" prefHeight="50.0" prefWidth="196.0" styleClass="boton-personalizado-5" text="LOGROS" />
+                        <JFXButton fx:id="btnAcercaDe" onAction="#onActionAcercaDe" prefHeight="25.0" prefWidth="151.0" styleClass="boton-personalizado-5" text="ACERCA DE" />
+                        <JFXButton fx:id="btnSalir" onAction="#onActionSalir" prefHeight="25.0" prefWidth="151.0" styleClass="boton-personalizado-5" text="SALIR">
+                           <VBox.margin>
+                              <Insets bottom="20.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets left="450.0" right="450.0" />
+                     </VBox.margin>
+                  </VBox>
+               </children>
+            </VBox>
+         </children></VBox>
+   </center>
+</BorderPane>

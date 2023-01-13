@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" styleClass="Inicio" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sokoban.controller.LogrosViewController">
+   <padding>
+      <Insets bottom="20.0" />
+   </padding>
+   <children>
+      <AnchorPane layoutX="163.0" layoutY="99.0" prefHeight="502.0" prefWidth="874.0" styleClass="opacity2">
+         <children>
+            <JFXButton fx:id="btnVolver" layoutX="14.0" layoutY="475.0" onAction="#onActionVolver" prefHeight="50.0" prefWidth="111.0" styleClass="boton-personalizado-4" text="VOLVER" />
+            <Text layoutX="368.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CARGAR LOGROS">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <Text fill="#0d00ff" layoutX="232.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logro 1" />
+            <Text fill="#0d00ff" layoutX="416.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logro 2" />
+            <Text fill="#0d00ff" layoutX="598.0" layoutY="313.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logro 3" />
+            <Text fill="#0d00ff" layoutX="232.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logro 4" />
+            <Text fill="#0d00ff" layoutX="416.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logro 5" />
+            <Text fill="#0d00ff" layoutX="598.0" layoutY="439.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logro 6" />
+            <Text layoutX="218.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dar 20 pasos" />
+            <Text layoutX="360.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completar un nivel a la primera" />
+            <Text layoutX="554.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mover una caja 10 veces" />
+            <Text layoutX="368.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mover una caja 150 veces" />
+            <Text layoutX="538.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Completar nivel 5 a la primera" />
+            <Text layoutX="146.0" layoutY="464.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pasar un nivel sin retroceder una jugada" />
+            <TableView fx:id="gridListaLogros" layoutX="64.0" layoutY="41.0" prefHeight="242.0" prefWidth="748.0" stylesheets="@style.css">
+               <columns>
+                  <TableColumn fx:id="txtColumnaNombre" prefWidth="93.0" style="-color-: red;" text="Nombre" />
+                  <TableColumn fx:id="txtColumnaLogro1" prefWidth="109.0" text="Primer Logro" />
+                  <TableColumn fx:id="txtColumnaLogro2" prefWidth="105.0" text="Segundo Logro" />
+                  <TableColumn fx:id="txtColumnaLogro3" prefWidth="109.0" text="Tercer Logro" />
+                  <TableColumn fx:id="txtColumnaLogro4" minWidth="0.0" prefWidth="112.0" text="Cuarto Logro" />
+                  <TableColumn fx:id="txtColumnaLogro5" minWidth="0.0" prefWidth="110.0" text="Quinto Logro" />
+                  <TableColumn fx:id="txtColumnaLogro6" minWidth="0.0" prefWidth="108.0" text="Sexto Logro" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
